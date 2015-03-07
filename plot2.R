@@ -6,7 +6,7 @@ plot2 <- function(directory){
         datetime <- paste(as.Date(data$Date), data$Time)
         data$Datetime <- as.POSIXct(datetime)
         plot( data$Datetime,data$Global_active_power,
-           
+             main = "Global Active Power",
              xlab ="",
              ylab = "Global Active Power (kilowatts)",
              type ="l"
