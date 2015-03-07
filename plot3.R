@@ -6,7 +6,7 @@ plot3 <- function(directory){
         png("plot3.png", width= 400, height= 400)
         datetime <- paste(as.Date(data$Date), data$Time)
         data$Datetime <- as.POSIXct(datetime)
-        
+        #plot
         with(data,{
                 plot( data$Datetime,data$Sub_metering_1,xlab ="",
                       ylab = "energy sub metering",type ="l")
