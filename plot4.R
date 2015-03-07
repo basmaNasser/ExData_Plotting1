@@ -21,7 +21,7 @@ plot4 <- function(directory){
                 lines( data$Datetime,data$Sub_metering_2,col= "red")
                 lines( data$Datetime,data$Sub_metering_3, col= "blue")
         })
-        legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2,bty="n",
+        legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2, bty="n",
                legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
         
         plot( data$Datetime,data$Voltage,
